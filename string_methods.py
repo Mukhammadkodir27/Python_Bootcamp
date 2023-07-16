@@ -49,4 +49,22 @@ print(job.lstrip())   # strip from left
 print(job.rstrip())   # strip from right
 
 
-# 9 - find()
+# 9 - find()  - used to find the index of specific word
+print(address.find("z"))  # 3 Lodz, Poland
+print(address.find("P"))  # 6 Lodz, Poland
+
+
+# 10 - replace()
+print(address.replace("and", "ska"))
+print(address.replace("z", "zkie"))
+
+
+# 11 - 'in' operator  - to check if we have certain words in a string
+print("Lo" in city)   # returns True as there is Lo in Lodz
+print("ska" in country)   # returns False as there is no ska in Poland
+
+
+# 12 - 'not' operator
+print("Lo" not in city)  # False
+print("ska" not in country)  # True
+'''if we dont have Lo in Lodz then it prints True if we have it then False'''
