@@ -28,6 +28,13 @@ country = "Poland"
 city = "Lodz"
 full_address = city + ", " + country
 print(full_address)
+# ------------------
+# Formatted Strings
+# ------------------
+country2 = "England"
+city2 = "London"
+full_address2 = f"{city2}, {country2}"
+print(full_address2)
 
 
 # 5 - upper()
