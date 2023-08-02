@@ -13,4 +13,6 @@ else:
 
 print(result)         
  
- 
+#---------- ->>> Ternary Operator
+result = "Passed" if score >= 75 else "Failed"
+print(result) 
