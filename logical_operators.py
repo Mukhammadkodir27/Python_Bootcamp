@@ -22,3 +22,13 @@ if high_income1 or good_credit:
     print("Eligible for Loan")
 else:
     print("Not Eligible for Loan")
+
+# Example 3 ->>> NOT
+student = True
+
+if not student:
+    print("Eligible for Loan")
+else:
+    print("Not Eligible for Loan")
+
+
