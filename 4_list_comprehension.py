@@ -54,3 +54,30 @@ product_prices = [item[1] for item in products]
 # product_prices = [item[1] * 2 for item in products]
 print(product_names)
 print(product_prices)
+
+
+# ---------- Part 2 ----------
+
+products = [("Cup", 5),
+            ("T-Shirt", 20),
+            ("Hat", 29),
+            ("Watch", 49),
+            ("UV Lamp", 27),
+            ("Mug", 7),
+            ]
+
+numbers = [21, 24, 56, 564, 102, 504, 79, 84]
+
+# Example ->>> Single Condition
+
+items = [item[1] for item in products if item[1] >= 20]
+print(items)
+
+# Example ->>> Two Conditions
+
+modified_numbers = [num if num > 100 else num / 2 for num in numbers]
+modified_numbers2 = [num if num < 100 else num / 2 for num in numbers]
+
+print(modified_numbers)
+print(modified_numbers2)
+
