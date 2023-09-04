@@ -59,3 +59,4 @@ print("Hallo", employee_info.get("Favorite Color"))
 print(employee_info.get("Favorite Color", "Green"))
 # in case if value of this key provided does not exists, then this value given with key will be used
 
+1
