@@ -98,3 +98,6 @@ vowels = dict.fromkeys(letters, numbers)
 # The {} object
 print({}.fromkeys(players))   # {} means a dictionary
 
+
+# ---------- Dictionary Methods Part 2 ----------
+
