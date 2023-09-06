@@ -1,4 +1,4 @@
-8# ---------- Introduction to Dictionaries ----------
+# ---------- Introduction to Dictionaries ----------
 
 # a collection of key value pairs
 
