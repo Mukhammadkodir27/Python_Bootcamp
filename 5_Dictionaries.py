@@ -102,5 +102,3 @@ print({}.fromkeys(players))   # {} means a dictionary
 # ---------- Dictionary Methods Part 2 ----------
 
 ............
-This is test file to be added on and on. 
-So what I do suggest is to shut the fuck up
