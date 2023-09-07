@@ -99,6 +99,24 @@ vowels = dict.fromkeys(letters, numbers)
 print({}.fromkeys(players))   # {} means a dictionary
 
 
+
 # ---------- Dictionary Methods Part 2 ----------
 
-............
+# Example 11 - items() method
+print(players.items())
+
+# Example 12 - items() method
+del players["Statistics"]  # del is used to delete dict key-value pairs
+
+# this shows all dictionary items(keys and its value pairs)
+print(players.items())
+
+
+# Example 13 - keys() method
+print(players.keys())
+
+# Example 14
+del players["Scores"]
+
+print(players.keys())
+
