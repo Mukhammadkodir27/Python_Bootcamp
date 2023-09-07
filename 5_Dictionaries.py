@@ -120,3 +120,32 @@ del players["Scores"]
 
 print(players.keys())
 
+
+
+# ---------- Dictionary Methods Part 3 ----------
+
+# Example 15 - values() method
+print(players.values())
+
+
+# Example 17 - popitem() method
+# it returns the last key-value pair from dictionary and removes it (LIFO order)
+print(players.popitem())
+print(players.popitem())
+players.popitem()
+print(players["Active Players"])
+
+
+# Example 18 - setdefault() method
+# it returns the value of a key in a dict
+# if the key does not exist then it creates and adds to a dict with None value
+# if you provide the default value, it creates a new key with its value
+
+print(players.setdefault("winger"))  # it exists so returns its value
+
+# it returns None and adds the key to our dictionary
+print(players.setdefault("red_cards"))
+
+# adds the new key-value pair to our dictionary
+print(players.setdefault("yellow_cards", "3 playes"))
+# the second arg will take apart only if the key does not exist, and have no value in it
