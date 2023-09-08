@@ -149,3 +149,6 @@ print(players.setdefault("red_cards"))
 # adds the new key-value pair to our dictionary
 print(players.setdefault("yellow_cards", "3 playes"))
 # the second arg will take apart only if the key does not exist, and have no value in it
+
+
+Part 4 does exist too
