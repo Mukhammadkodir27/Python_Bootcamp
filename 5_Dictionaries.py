@@ -1,7 +1,5 @@
 # ---------- Introduction to Dictionaries ----------
-
 # a collection of key value pairs
-
 # Example 1
 contacts = {
     "Samantha": 456,
@@ -60,8 +58,9 @@ print(employee_info.get("Favorite Color", "Green"))
 # in case if value of this key provided does not exists, then this value given with key will be used
 
 
-# ---------- Dictionary Methods Part 1 ----------
 
+
+# ---------- Dictionary Methods Part 1 ----------
 players = {
     "winger": "Kadir",
     "striker": "Adil",
@@ -100,8 +99,9 @@ print({}.fromkeys(players))   # {} means a dictionary
 
 
 
-# ---------- Dictionary Methods Part 2 ----------
 
+
+# ---------- Dictionary Methods Part 2 ----------
 # Example 11 - items() method
 print(players.items())
 
@@ -122,8 +122,9 @@ print(players.keys())
 
 
 
-# ---------- Dictionary Methods Part 3 ----------
 
+
+# ---------- Dictionary Methods Part 3 ----------
 # Example 15 - values() method
 print(players.values())
 
@@ -151,4 +152,76 @@ print(players.setdefault("yellow_cards", "3 playes"))
 # the second arg will take apart only if the key does not exist, and have no value in it
 
 
-Part 4 does exist too
+
+
+# ---------- Dictionary Methods Part 4 ----------
+players = {
+    "winger": "Kadir",
+    "striker": "Adil",
+    "defender": "Fozil",
+    "winger_number": 7,
+    "subs": "Bin, Maiwand, Gourab",
+    11: "squad amount",
+    "Best Player": "Kadir, 7, Uzbekistan",
+    "Active Players": True,
+    "Statistics": {"Win", "Win", "Lose", "Win"},
+    "Scores": ["11:1", "0:3", "5:4"],
+    "Cups": ("Sawo Gruz", "Nations Cup")
+}
+
+# Example 19 - pop() method
+# it returns a value of a given key - key will be provided as an arg
+
+# Case #1
+
+target_item1 = players.pop("winger_number")
+# as you can see now pop method returned the value of a given arg key then removed it from dict
+print(target_item1)
+# print(players)
+
+if "winger_number" in players:
+    print("It exists")
+else:
+    print("It was alrady removed")
+
+
+# Case #2
+# if you want to call pop() method with a key which does not exist, you must pass it with its value
+
+target_item2 = players.pop("Coach", "Free")
+print(target_item2)
+# print(players)
+
+
+# Case #3
+# What if we pass a key which does not exists and without a value, it gives an error
+
+# target_item3 = players.pop("Ref")
+# print(target_item3)
+
+
+# Example 23 - update() method
+# it is going to update our dict with the elements of another dict
+# it could be another dict or tuple
+
+# Case #1
+lost_key = {"Five_Star": "C.Ronaldo"}
+players.update(lost_key)
+
+# Case #2
+# what if we try to update our dict with a key that actually exists
+found_key = {"Five_Star": "Abdusalomov"}
+players.update(found_key)
+
+# print(players)
+
+# the difference between popitem() - pop() and update is that
+# when you provide a value of a key which exists, pop and popitem returns
+# the original(previous) key value, but update() method actually updates it
+# with new provided key-value
+
+
+# Case #3 - when a tuple is passed not dict
+players.update(club_name="UzTeam", year="2023")
+
+# print(players)
