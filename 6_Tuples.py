@@ -75,3 +75,36 @@ print(mixed[:])
 print(mixed[:-1])  # from -5, -4, -3, -2 till -1
 print(mixed[:-3])  # from -5, -4 till -3
 
+
+# ----- Chaning Tuples -----
+
+# Example ---> Chaning Tuple Elements (Lists)
+numbers = (4, 2, 3, [5, 6, 7, 8])
+# numbers[1] = 10 #TypeError
+
+print(numbers)
+numbers[3][2] = 111
+print(numbers)
+print(numbers[3])
+
+# Example ---> Reassignment of a tuple
+# we can reassign a tuple with different values
+numbers = (222, 333, 111)
+print(numbers)
+
+# Example ---> repeating a tuple items
+print(("Movie",) * 5)
+
+# Example ---> tuple concatenation
+letters = ("p", "y", "t", "h", "o", "n")
+
+nums_and_letters = numbers + letters
+print(nums_and_letters)
+
+
+# we cannot delete individual items in tuple
+# but we can delete a tuple entirely
+del letters
+del numbers
+
+# print(letters) #NameError as letters (tuple) is not defined
