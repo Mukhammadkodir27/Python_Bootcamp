@@ -19,11 +19,9 @@ employee_info = {
 
 print(employee_info)
 
-
 # Example 3
 animal_names = dict(cat="Sebastian", dog="Togo")
 # dog is the key and togo is the value
-
 
 # Accessing Dictionary Key Values
 
@@ -37,7 +35,6 @@ employee_info["Job"] = "Developer"
 employee_info["Age"] = 32
 employee_info["Hobbies"] = "Reading", "Walking"
 # here we added new key to our dictionary
-
 
 # Example 6
 # what if we try to access key which does not exists in our dictionary
@@ -56,8 +53,6 @@ print("Hallo", employee_info.get("Favorite Color"))
 # Example 7
 print(employee_info.get("Favorite Color", "Green"))
 # in case if value of this key provided does not exists, then this value given with key will be used
-
-
 
 
 # ---------- Dictionary Methods Part 1 ----------
@@ -84,7 +79,6 @@ new_squad = players.copy()
 new_squad["subs"] = "Kadir, Adil, Fozil"
 new_squad["Active Players"] = False
 
-
 # fromkeys()  - accept the sequences
 letters = {'a', 'e', 'i', 'o', 'u'}
 numbers = [1, 2]
@@ -93,12 +87,8 @@ vowels = dict.fromkeys(letters)  # none automatically
 vowels = dict.fromkeys(letters, numbers)
 # all these items will have a value provided secondly as arg
 
-
 # The {} object
 print({}.fromkeys(players))   # {} means a dictionary
-
-
-
 
 
 # ---------- Dictionary Methods Part 2 ----------
@@ -119,9 +109,6 @@ print(players.keys())
 del players["Scores"]
 
 print(players.keys())
-
-
-
 
 
 # ---------- Dictionary Methods Part 3 ----------
@@ -150,8 +137,6 @@ print(players.setdefault("red_cards"))
 # adds the new key-value pair to our dictionary
 print(players.setdefault("yellow_cards", "3 playes"))
 # the second arg will take apart only if the key does not exist, and have no value in it
-
-
 
 
 # ---------- Dictionary Methods Part 4 ----------
@@ -220,12 +205,10 @@ players.update(found_key)
 # the original(previous) key value, but update() method actually updates it
 # with new provided key-value
 
-
 # Case #3 - when a tuple is passed not dict
 players.update(club_name="UzTeam", year="2023")
 
 # print(players)
-
 
 
 # ---------- Iterating over Dictionaries ----------
