@@ -225,3 +225,36 @@ players.update(found_key)
 players.update(club_name="UzTeam", year="2023")
 
 # print(players)
+
+
+
+# ---------- Iterating over Dictionaries ----------
+
+random = {
+    1: 456,
+    2: 123,
+    45: "Hey",
+    "is_employed": False
+}
+
+# iterating over dictionary keys
+for key in random:
+    print(key)
+
+
+employee_info = {
+    "Name": "Kane",
+    "Surname": "William",
+    "Address": "New York, USA",
+    "Job": "Programmer",
+    "Age": 27
+}
+
+# iterating over dictionary key-values
+for i in employee_info:
+    print(employee_info[i])
+
+# values
+for key in random:
+    print(random[key])
+
