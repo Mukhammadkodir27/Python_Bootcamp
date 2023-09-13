@@ -119,3 +119,14 @@ print(colors.count("black"))
 # Example ---> index()
 print(colors.index("blue"))
 print(colors.index("green"))
+
+
+# ----- Tuple Operations -----
+# Example ---> Tuple Membership Test
+print("green" in colors)  # true if exists
+print("black" in colors)  # false if does not exists
+
+# Example ---> Iterating over Tuples
+for color in colors:
+    print(color)
+    print("I like the color", color)
