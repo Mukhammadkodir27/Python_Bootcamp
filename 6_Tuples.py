@@ -76,7 +76,7 @@ print(mixed[:-1])  # from -5, -4, -3, -2 till -1
 print(mixed[:-3])  # from -5, -4 till -3
 
 
-# ----- Chaning Tuples -----
+# ----- Changing Tuples -----
 
 # Example ---> Chaning Tuple Elements (Lists)
 numbers = (4, 2, 3, [5, 6, 7, 8])
@@ -108,3 +108,14 @@ del letters
 del numbers
 
 # print(letters) #NameError as letters (tuple) is not defined
+
+
+# ----- Tuple Methods -----
+# Example ---> count() method
+colors = ("green", "blue", "violet", "lawngreen", "green")
+print(colors.count("green"))
+print(colors.count("black"))
+
+# Example ---> index()
+print(colors.index("blue"))
+print(colors.index("green"))
