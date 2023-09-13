@@ -45,3 +45,70 @@ numbers = set()
 print(numbers)
 print(type(numbers))
 
+
+# ----- Modifying Lists -----
+
+# Example ---> Creating a set
+mixed_info = {"Python", "Dog"}
+
+# Example ---> Indexing is not allowed
+# print(mixed_info[0]) #TypeError
+
+# Example ---> add()
+mixed_info.add(31)
+mixed_info.add("C++")
+# print(mixed_info)
+
+
+# Example ---> update()  to add multiple items at a time
+mixed_info.update([12, "Jar", "Sand", 23])
+print(mixed_info)
+
+# Example ---> update()
+# duplicates are removed as it is becoming a set
+mixed_info.update(["Bird", "Island"], ("Cat", "Island"), {"Rabbit", "Island"})
+print(mixed_info)
+
+
+# ---------- Removing Set Items ----------
+
+# Example ---> discard()
+numbers = {1, 2, 3, 4, 5, 6}
+print(numbers)
+# cool thing about discard is that if item does not exist it won't give an error
+numbers.discard(4)
+print(numbers)
+
+# Example ---> discard() -> item which does not exist
+numbers.discard(11)
+print(numbers)
+
+
+# Example ---> remove()
+numbers2 = {1, 2, 3, 4, 5, 6}
+print(numbers2)
+
+numbers2.remove(3)
+print(numbers2)
+
+# Example ---> remove() -> item which does not exist
+# numbers.remove(11) # KeyError as item does not exist
+
+
+# Example ---> pop()
+# it removes arbitrary item as there is no indexing in set.
+# it cannot delete the last item as there is no indexing
+
+numbers2.pop()
+print(numbers2)
+numbers2.pop()
+print(numbers2)
+# numbers2.pop()
+# print(numbers2)
+
+
+# Example ---> clear()
+numbers.clear()
+print(numbers)  # it prints set() because it cannot print {}, it is for dict
+numbers2.clear()
+print(numbers2)  # this method clears the entire set
