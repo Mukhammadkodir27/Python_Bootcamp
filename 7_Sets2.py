@@ -30,5 +30,3 @@ print(B ^ A)
 
 print(A.symmetric_difference(B))
 print(B.symmetric_difference(A))
-
-...
