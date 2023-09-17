@@ -37,3 +37,4 @@ numbers1 = {number ** 2 for number in range(10)}  # ** means power of
 print(numbers1)  # {}
 numbers2 = {number ** 3 for number in range(5)}
 print(numbers2)  # {}
+...
