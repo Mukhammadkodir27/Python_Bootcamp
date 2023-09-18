@@ -12,3 +12,4 @@ for vowel in vowels:
 print("There are", counter, "vowels")
 
 
+...
