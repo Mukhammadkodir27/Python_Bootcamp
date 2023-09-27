@@ -19,7 +19,6 @@ print("")
 products.sort(key=lambda items: items[0])
 print(products)
 
-better not do anything
 
 
 '''
