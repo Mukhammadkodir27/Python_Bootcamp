@@ -20,6 +20,18 @@ products.sort(key=lambda items: items[0])
 print(products)
 
 
+my_list = [1, 5, 4, 6, 8, 11, 3, 12, 34, 55]
+
+# this new list will take only even numbers
+new_list = filter(lambda x: (x % 2 == 0), my_list)
+
+for num in new_list:
+    print(num)
+
+# it won't assign a list to the new list as it can be used once only (iterator)
+even_nums = list(new_list)
+print(even_nums)
+
 
 '''
 products = [("Apple", 3), ("Banana", 2), ("Cherry", 5), ("Date", 1)]
