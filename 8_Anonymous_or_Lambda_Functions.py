@@ -11,7 +11,7 @@ products = [
     ("Item6", 4)
 ]
 
-products.sort(key=lambda product: product[1])
+products.sort(key=lambda product: product[1])   # once we are done with this, it will go to garbage, so garbage collected, can't use second time
 print(products)
 
 print("")
