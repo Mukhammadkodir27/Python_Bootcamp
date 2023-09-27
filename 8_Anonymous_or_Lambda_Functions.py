@@ -4,3 +4,4 @@
 
 complete this course
 complete data structures and algorithms course
+complete master class course
