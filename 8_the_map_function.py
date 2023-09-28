@@ -22,4 +22,4 @@ print(tuple(results))
 # nums1 = [1, 2, 3, 4, 5]
 # nums2 = [1, 2]
 result2 = map(lambda n1, n2: n1 + n2, nums1, nums2) 
-# this time map function will be executed 2 times only, as the second iterable named nums2 consists of 2 elements only
+# this time map function will be executed 2 times only, as the second iterable named nums2 consists of 2 elements only.
