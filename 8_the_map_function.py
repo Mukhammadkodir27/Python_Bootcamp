@@ -12,4 +12,3 @@ def calculate_square(n):
 results = map(calculate_square, numbers)
 results_in_list = list(results)
 print(results_in_list)
-
