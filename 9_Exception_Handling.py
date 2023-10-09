@@ -75,3 +75,51 @@ for a in random_list:
 
 print()
 print("The reciprocal of", a, "is", r)
+
+
+
+# ----------------------------------------------------------------------------------------------
+
+# --------- Exception Handling 2 ----------
+
+# Example
+# try:
+#     age = int(input("Age: "))
+#     result = 10 / age
+# except ValueError:
+#     print("Please enter a valid value")
+# else:
+#     print("No Errors Here")
+
+
+# Example ->>> ZeroDivisionError
+# try:
+#     age = int(input("Age: "))
+#     result = 10 / age
+# except ValueError:
+#     print("Please enter a valid value")
+# except ZeroDivisionError:
+#     print("age cannot be zero!")
+# else:
+#     print("No Errors Here")
+
+# Example ->>> creating a tuple of errors
+# try:
+#     age = int(input("Age: "))
+#     result = 10 / age
+# except (ValueError, ZeroDivisionError):
+#     print("Please enter a valid value")
+# except ZeroDivisionError:
+#     print("Age cannot be zero!")
+# else:
+#     print("No Errors Here")
+
+
+# Example ->>> a tuple of errors
+try:
+    age = int(input("Age: "))
+    result = 10 / age
+except (ValueError, ZeroDivisionError):
+    print("Please enter a valid value")
+else:
+    print("No Errors Here")
