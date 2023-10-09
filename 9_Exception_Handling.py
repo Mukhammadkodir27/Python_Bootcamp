@@ -123,3 +123,63 @@ except (ValueError, ZeroDivisionError):
     print("Please enter a valid value")
 else:
     print("No Errors Here")
+
+# --------------------------------------------------------------------------------------------------------------------------
+
+# ---------- Exception Handling 3 ----------
+
+# finally clause --->>> runs no matter there is exception or there is no exception
+# it always runs
+
+
+# Example --- try... except... else... finally...
+
+# Example 1
+# try:
+#     note = open("someFile.txt")
+#     age = int(input("Enter age: "))
+#     result = 10 / age
+#     note.close()  # this file wont be closed if there is exception in previous lines
+# except (ValueError, ZeroDivisionError):
+#     print("Please enter a valid value")
+# else:
+#     print("No Exceptions here")
+
+
+# Solution 1
+# try:
+#     note = open("someFile.txt")
+#     age = int(input("Enter age: "))
+#     result = 10 / age
+# except (ValueError, ZeroDivisionError):
+#     print("Please enter a valid value")
+#     note.close()  # this file wont be closed if there is no exception
+# else:
+#     print("No Exceptions here")
+
+
+# Solution 2
+# try:
+#     note = open("someFile.txt")
+#     age = int(input("Enter age: "))
+#     result = 10 / age
+# except (ValueError, ZeroDivisionError):
+#     print("Please enter a valid value")
+#     note.close()  # this file wont be closed if there is no exception
+# else:
+#     print("No Exceptions here")
+#     note.close()  # we are making duplicates of the same code so not good way to solve the issue
+
+
+# Solution 3 ->>> finally clause
+try:
+    note = open("someFile.txt")
+    age = int(input("Enter age: "))
+    result = 10 / age
+except (ValueError, ZeroDivisionError):
+    print("Please enter a valid value")
+else:
+    print("There are no exceptions")
+finally:  # this will be executed no matter what (yes or no exceptions)
+    note.close()
+
