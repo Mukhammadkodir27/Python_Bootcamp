@@ -38,3 +38,40 @@ except ValueError as exp_error:
     print(type(exp_error))
 else:
     print("No Exceptions here!")
+
+
+# Example
+
+random_list = ["a", 0, 2]
+
+for entry in random_list:
+    try:
+        print("The entry is", entry)
+        r = 1 / int(entry)
+        break
+    except:
+        print("oops", sys.exc_info()[0], "occured!")
+
+        print("Next Entry")
+        print()
+
+print()
+print("The reciprocal of", entry, "is", r)
+
+
+# Example
+
+for a in random_list:
+    try:
+        print("The entry is", a)
+        r = 1 / int(a)
+        break
+    except Exception as exp_error:
+        print("oops", exp_error.__class__, "occured!")
+
+        print("Next Entry")
+        print()
+
+
+print()
+print("The reciprocal of", a, "is", r)
