@@ -183,3 +183,43 @@ else:
 finally:  # this will be executed no matter what (yes or no exceptions)
     note.close()
 
+
+# ------------------------------------------------------------------------------------------------
+
+
+# ---------- With Statement ----------
+
+# the good thing about With Statement is that we can use FileNotFoundError to check the files opened
+# if the files does exist or not, or if there are any issues with the file, we can check it via using With Statement for files.
+
+# Also it automatically closes the opened file.
+# we don't need to call the close method for opened file
+
+try:
+    with open("someFile.txt") as note, open("anotherFile.txt") as my_note:
+        print("note opened")
+
+    age = int(input("Age: "))
+    result = 10 / age
+except (ValueError, ZeroDivisionError):
+    print("Please enter a valid value")
+except FileNotFoundError:
+    print("Check the file!")
+else:
+    print("No Exceptions Found!")
+
+
+# Example
+# try:
+#     with open("someFile.txt") as note:
+#         print("note opened")
+
+#     age = int(input("Age: "))
+#     result = 10 / age
+# except (ValueError, ZeroDivisionError):
+#     print("Please enter a valid value")
+# except FileNotFoundError:
+#     print("Check the file!")
+# else:
+#     print("No Exceptions Found!")
+
