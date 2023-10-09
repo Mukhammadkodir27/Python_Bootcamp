@@ -245,3 +245,35 @@ except ValueError as error:
 else:
     print("No Exceptions")
 
+
+# -----------------------------------------------------------------------------------------------
+
+
+# ---------- Bad Sides of Raising Exceptions ----------
+
+from timeit import timeit
+
+test_run1 = """ 
+
+def calculate_age(age):
+    if age <= 0:
+        raise ValueError("age cannot be zero or less")
+
+    return 10 / age
+
+
+try:
+    # calculate_age(0)
+    calculate_age(-5)
+    # calculate_age(2)
+except ValueError as error:
+    pass
+    
+"""
+
+print("Test 1:", timeit(test_run1, number=10000))
+
+
+# it takes longer time in bigger applications which results in inperformance
+
+
