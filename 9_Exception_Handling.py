@@ -223,3 +223,25 @@ else:
 # else:
 #     print("No Exceptions Found!")
 
+
+# -------------------------------------------------------------------------------------------------
+
+
+# ---------- Raising Exceptions ----------
+
+def calculate_age(age):
+    if age <= 0:
+        raise ValueError("age cannot be zero or less")
+
+    return 10 / age
+
+
+try:
+    # calculate_age(0)
+    calculate_age(-5)
+    # calculate_age(2)
+except ValueError as error:
+    print(error)
+else:
+    print("No Exceptions")
+
