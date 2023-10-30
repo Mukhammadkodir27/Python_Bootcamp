@@ -22,5 +22,5 @@ print(isinstance(robot_obj, Robot))
 """
 Functions inside any class must have at least one parameter.
 By convention we call that parameter as "self". 
-Self is a refference to tge class we are working with.
+Self is a refference to the class we are working with.
 """
