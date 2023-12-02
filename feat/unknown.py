@@ -40,6 +40,3 @@ int main() {
 
     return 0;
 }
-
-222
-ььь
