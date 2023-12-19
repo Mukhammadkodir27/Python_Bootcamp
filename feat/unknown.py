@@ -41,3 +41,4 @@ int main() {
     return 0;
 }
 
+print("Python is much better!")
