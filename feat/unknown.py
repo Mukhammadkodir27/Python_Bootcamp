@@ -43,3 +43,4 @@ int main() {
 }
 
 print("Python is much better!")
+# no python code
