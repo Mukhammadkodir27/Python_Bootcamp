@@ -15,3 +15,6 @@ for n in name:
     print(n)
 
 print(name + " " + "Abdusalomov")
+
+# string concatenation with .format
+print(f"{name}, {surname}")
