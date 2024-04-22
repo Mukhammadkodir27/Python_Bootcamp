@@ -10,3 +10,5 @@ meaning that you can talk to ai when you feel you are alone.
 
 i failed again and again and again
 ...but never gave up 
+
+now time to break the break
