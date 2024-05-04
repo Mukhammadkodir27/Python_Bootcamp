@@ -6,3 +6,5 @@ class Person:
        self.y = y
 def walk(self)
    print(f"Walking coordinates ({self.x}, {self.y})")
+
+print()
