@@ -8,3 +8,6 @@ def walk(self)
    print(f"Walking coordinates ({self.x}, {self.y})")
 
 print()
+
+
+#decorators @classmethod
