@@ -11,3 +11,6 @@ print()
 
 
 #decorators @classmethod
+#instance methods object methods
+#instance attributes object attributes
+#magic methods
