@@ -1,6 +1,7 @@
 # ----- Files -----
 
 from pathlib import Path
+import shutil  # this is used to copy files
 from time import ctime
 # also this module allows to convert seconds into human readable time
 # ctime module is used to convert unix based date time to our date time, so that we understand our files data
@@ -32,11 +33,17 @@ print(ctime(my_directory.stat().st_ctime))  # creation time
 
 # ? The following 4 methods take care of opening and closing the file ...
 #! 5 - read_bytes() ->> reading data from a file and returns the content of the file as a bytes object for representing binary data
-
+print(my_directory.read_bytes())
 #! 6 - read_text() ->> reading the content of the file as a string
-
+print(my_directory.read_text())
 #! 7 - write_bytes() ->> writing to a file
-
+print(my_directory.write_bytes(b'print("Hello from thisPC")'))
+print(my_directory.read_text())
 #! 8 - write_text() ->> writing to a file as a string
-
+print(my_directory.write_text("print('Hello, How are you doing?')"))
+print(my_directory.read_bytes())
 #! 9 - Copying a file to another location
+target_directory = Path("13_Standard_Library/astronomy")
+
+shutil.copy(my_directory, target_directory)
+# shutil.copy(what, where)
