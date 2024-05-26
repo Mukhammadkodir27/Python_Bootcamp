@@ -30,8 +30,3 @@ for i in ft_group:
               ft_group.count(i), "times")
         continue
         # break could be used but not recommended!
-
-
-
-#1111
-#1111
