@@ -22,19 +22,10 @@ This repository serves as my personal Python bootcamp, where I've documented my 
 I've organized the tutorials I've followed into separate directories based on topics. Here's a breakdown:
 
 - **Basics**
-  - [Tutorial Name]
-    - [Source Code]
-    - [Notes]
 
 - **Intermediate**
-  - [Tutorial Name]
-    - [Source Code]
-    - [Notes]
 
 - **Advanced**
-  - [Tutorial Name]
-    - [Source Code]
-    - [Notes]
 
 ## Progress
 
