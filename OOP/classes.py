@@ -41,3 +41,4 @@ my_info = {
 print(type(my_info))  # my_info is an object of dict class
 
 #class
+#module 
