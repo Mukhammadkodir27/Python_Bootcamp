@@ -11,3 +11,5 @@ print(type(None))
 
 user_password = None
 print(user_password)
+ 
+# inside class alsoncan be udef
