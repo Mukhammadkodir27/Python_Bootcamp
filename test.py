@@ -283,75 +283,284 @@
 # diction.update(new_diction)
 #! =================================
 
-# printing keys only
-# for i in user_info:
-#     print(i)
+# # printing keys only
+# # for i in user_info:
+# #     print(i)
 
-# # printing values only not keys
-# for i in user_info:
-#     print(user_info[i])
-# # print(user_info[key]) # ex: same as above
-
-
-# ? =*=*=*=*=*=*=*=*=*=* Tuples =*=*=*=*=*=*=*=*=*=*=*=
-# similar to lists, ordered, but once assigned we cannot change the elements of a tuple
-example_tuple = ()
-print(type(example_tuple))
-
-numbers = (1, 2, 3, 4, 5)
-print(numbers[1])
-
-# this is tuple too
-names = 'Kadir', 'Adil', 'Boy'
-numbers = 1, 2, 3, 4, 5
-print(numbers[1])
-
-num1, num2, num3, *num_plus = numbers
-
-# tuple with one element
-name = ('Kadir')  # string
-name = ('Kadir', )  # tuple
-name = 'Kadir',  # tuple
-number = 1,  # tuple
-
-print(type(name))
-print(type(number))
-
-print('Boy' in name)  # Boy is in name?
-
-del numbers
-number = ()
-del name
-
-#! ===============================
-# count(value)
-# index(value)
-# del
-#! ===============================
-
-# ? =*=*=*=*=*=*=*=*=*= Sets *=*=*=*=*=*=*=*=*=*=*=*=
-# sets are mutable, unordered, removes duplicates
-example_set = {1, 2, 3, 4, 4, 5, 5, 5}
-
-# creating a set from a tuple
-colors = set(('green', 'green', 'yellow'))
-# it removed duplicates so only unique values
-
-numbers = set()
-numbers.add(31)
-numbers.update(['Name', 'Surname'], (True, False))
-
-# discard(value) - even not exists
-numbers.discard(33)
-
-# remove(value) - error if not exists
-numbers.remove(31)
-
-# pop() - removes any random element
-numbers.pop()
-
-# clear() - clears the set
-numbers.clear()
+# # # printing values only not keys
+# # for i in user_info:
+# #     print(user_info[i])
+# # # print(user_info[key]) # ex: same as above
 
 
-print(2**32)
+# # ? =*=*=*=*=*=*=*=*=*=* Tuples =*=*=*=*=*=*=*=*=*=*=*=
+# # similar to lists, ordered, but once assigned we cannot change the elements of a tuple
+# example_tuple = ()
+# print(type(example_tuple))
+
+# numbers = (1, 2, 3, 4, 5)
+# print(numbers[1])
+
+# # this is tuple too
+# names = 'Kadir', 'Adil', 'Boy'
+# numbers = 1, 2, 3, 4, 5
+# print(numbers[1])
+
+# num1, num2, num3, *num_plus = numbers
+
+# # tuple with one element
+# name = ('Kadir')  # string
+# name = ('Kadir', )  # tuple
+# name = 'Kadir',  # tuple
+# number = 1,  # tuple
+
+# print(type(name))
+# print(type(number))
+
+# print('Boy' in name)  # Boy is in name?
+
+# del numbers
+# number = ()
+# del name
+
+# #! ===============================
+# # count(value)
+# # index(value)
+# # del
+# #! ===============================
+
+# # ? =*=*=*=*=*=*=*=*=*= Sets *=*=*=*=*=*=*=*=*=*=*=*=
+# # sets are mutable, unordered, removes duplicates
+# example_set = {1, 2, 3, 4, 4, 5, 5, 5}
+
+# # creating a set from a tuple
+# colors = set(('green', 'green', 'yellow'))
+# # it removed duplicates so only unique values
+
+# numbers = set()
+# numbers.add(31)
+# numbers.update(['Name', 'Surname'], (True, False))
+
+# # discard(value) - even not exists
+# numbers.discard(33)
+
+# # remove(value) - error if not exists
+# numbers.remove(31)
+
+# # pop() - removes any random element
+# numbers.pop()
+
+# # clear() - clears the set
+# numbers.clear()
+
+
+# # print(2**32)
+
+# numbers = input('Enter 5 numbers: ').split(' ')
+# print('Returned a list: ', numbers)
+
+# # * - unpacking operator
+# print('Returned: ', *numbers)
+
+
+# numbers = [1, 2, 3, 4, 5, 6]
+# numbers = sorted(numbers, reverse=True)
+# print(numbers)
+
+# nums = [1, 2, 3, 4]
+# nums.sort(reverse=True)
+# print(nums)
+
+# import sys
+
+# try:
+#     pass
+# except ValueError as exp_error:
+#     print(exp_error)
+#     print(type(exp_error))
+# else:
+#     pass
+
+
+# try:
+#     age = int(input('Enter your age: '))
+#     bonus = age * 0.057
+#     not_zero = 100 / age
+# except (ValueError, ZeroDivisionError) as exp_error:
+#     print('Please enter a valid value', exp_error)
+#     print('Error occured due to', type(exp_error))
+# else:
+#     print('Successfull Operation')
+
+
+# class Student:
+#     def __init__(self, name, surname, id, is_active):
+#         self.name = name
+#         self.surname = surname
+#         self.id = id
+#         self.is_active = is_active
+
+#     def __str__(self):
+#         return f'Hello'
+
+#     def details(self):
+#         print(f'Name: {self.name}, is active student: {self.is_active}')
+
+
+# student_1405 = Student('Boy', 'Khamidov', 147641, True)
+# print(student_1405)
+# # student_1405.details()
+
+# #! ================ Modules ====================
+
+# import sys
+# from functions import calculate_age
+# from functions import output_basics
+# import functions
+# output_basics()
+# print(calculate_age(2002, 2025))
+
+# functions.output_basics()
+# print(functions.calculate_age(2003, 2025))
+
+# # * from folder_name.file_name import function_name
+# # * import sys
+
+# print(sys.path)
+# #! ================ ------- ====================
+
+# import webbrowser
+# webbrowser.open('https://fmovies.co')
+
+# from pathlib import Path
+
+# path = Path()
+# print(path)
+
+# # ? home()
+# print(Path.home())
+
+# # ? exists(file_path) - if file/folder exists [True/False]
+# print(path.exists())
+
+# # ? absolute()
+# print(path.absolute())
+
+# # ? changing the extension of a file
+# print(path3.with_suffix(".js"))
+
+
+# #! Virtual Environment
+# pip install pipenv
+# pipenv - -version
+# pipenv install requests  # or module_name
+# pipenv shell
+# exit  # or deactivate
+
+# # this will create Pipfile and Pipfile.lock then pip install other libraries/modules
+
+
+import statistics
+import math
+
+
+class Car:
+    is_new = True
+    is_used = False
+
+    def __init__(self, name=None, brand=None, color=None, year=None):
+        self.name = name if name else 'Default Name'
+        self.brand = brand if brand else 'Default Brand'
+        self.color = color if color else 'Default Color'
+        self.year = year if year else 2025
+
+    def get_car_info(self):
+        return f'This is {self.name} manufactured by {self.brand} in {self.year}'
+
+
+tesla_model_s = Car()
+# assigning new attribute to class object
+tesla_model_s.is_electric = True
+car_info = tesla_model_s.get_car_info()
+print(f'{car_info} and it operates in electricity' if tesla_model_s.is_electric else '{car_info} and it is not electric')
+
+
+#! ------------------------------------------------------
+
+
+class Calc:
+    mem_list = []
+
+    def __init__(self, name, producer, color):
+        self.name = name
+        self.name = name
+        self.producer = producer
+        self.color = color
+
+    def add(self, a, b):
+        self.mem_list.append(a+b)
+        return a + b
+
+    def substract(self, a, b):
+        self.mem_list.append(a-b)
+
+    def divide(self, a, b):
+        self.mem_list.append(a//b)
+
+    def multiply(self, a, b):
+        self.mem_list.append(a*b)
+
+    def __str__(self):
+        return f"Here are the results: {self.name} {self.producer}, {self.color}"
+
+    def print_me(self):
+        for i in self.mem_list:
+            print(i)
+
+
+class Scientific_calc(Calc):
+    def __init__(self, name, producer, color):
+        Calc.__init__(self, name, producer, color)
+
+    def log(self, a):
+        self.mem_list.append(math.log(a))
+        return math.log(a)
+
+    def pow(self, a, b):
+        self.mem_list.append(a**b)
+        return a**b
+
+
+class ExtraCalc(Calc):
+    def __init__(self, name, producer, color, owner_name):
+        Calc.__init__(self, name, producer, color)
+        self.owner_name = owner_name
+
+    def get_min_result(self):
+        return min(self.mem_list)
+
+    def get_mean_result(self):
+        return statistics.mean(self.mem_list)
+
+    def get_std_result(self):
+        return statistics.stdev(self.mem_list)
+
+
+random_value = Calc("Hmm", "Hmm", "red")
+random_value.add(5, 5)
+random_value.substract(5, 5)
+random_value.divide(5, 5)
+random_value.multiply(5, 5)
+
+random_value.print_me()
+
+
+rr_val = Scientific_calc("Hmm", "Hmm", "red")
+print(rr_val.log(5))
+print(rr_val.pow(5, 5))
+
+
+r_val = ExtraCalc("Hmm", "Hmm", "Hmm", "Hmm")
+print(r_val.get_min_result())
+print(r_val.get_mean_result())
+print(r_val.get_std_result())
